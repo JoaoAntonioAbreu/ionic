@@ -1,0 +1,7 @@
+{
+  "appId": "com.front-end.ionic",
+  "appName": "mobile-app",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

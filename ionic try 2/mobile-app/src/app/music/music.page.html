@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Musicas Disponiveis</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item
+      *ngFor="let musicas of music"
+      [routerLink]="['/music', musicas.id]"
+    >
+      <ion-avatar slot="start">
+        <ion-img [src]="musicas.imagemUrl"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{ musicas.title }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
